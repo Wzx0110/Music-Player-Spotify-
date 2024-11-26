@@ -12,6 +12,7 @@ struct Music_PlayerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(AppState())
         }
     }
 }
