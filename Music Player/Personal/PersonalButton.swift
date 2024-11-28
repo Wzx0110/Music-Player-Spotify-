@@ -14,7 +14,7 @@ struct PersonalButton: View {
     
     var body: some View {
         Button(action: {
-            appState.showPersonalView = true// 切换菜单的状态
+            appState.showPersonalView = true
         }) {
             ZStack {
                 Circle()
