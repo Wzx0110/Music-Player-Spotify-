@@ -20,11 +20,12 @@ struct ContentView: View {
             else if appState.showMusicLibraryView {
                 MusicLibraryView()
             }
+            if appState.showMusicBarView {
+                MusicBarView()
+            }
             MenuButton()
             PersonalView()
             CreationView()
-            
-            
         }
     }
 }

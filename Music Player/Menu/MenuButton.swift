@@ -12,7 +12,9 @@ struct MenuButton: View {
     
     var body: some View {
         ZStack {
-            Color.black.edgesIgnoringSafeArea(.all).frame(width: 400, height: 200)
+            Color.black.edgesIgnoringSafeArea(.all)
+                .frame(maxWidth: .infinity)
+                .frame(height: 200)
                 .offset(y: 420)
             
             HStack(spacing: 0) {
@@ -31,7 +33,8 @@ struct MenuButton: View {
                             .font(.system(size: 12))
                             .padding(.vertical, 5)
                             .foregroundColor(.white)
-                    }.frame(width: 100)
+                    }
+                    .frame(width: 100)
                 }
                 Button(action: { // 按鈕（搜尋）
                     appState.showHomePageView = false
@@ -48,13 +51,13 @@ struct MenuButton: View {
                             .font(.system(size: 12))
                             .padding(.vertical, 5)
                             .foregroundColor(.white)
-                    }.frame(width: 100)
+                    }
+                    .frame(width: 100)
                 }
                 Button(action: { // 按鈕（你的音樂庫）
                     appState.showHomePageView = false
                     appState.showSearchView = false
                     appState.showMusicLibraryView = true
-                    
                 }) {
                     VStack {
                         Image(systemName: "books.vertical")
@@ -85,7 +88,8 @@ struct MenuButton: View {
                     }
                     .frame(width: 100)
                 }
-            }.offset(x:0, y: 370)
+            }
+            .offset(y: 370)
         }
     }
 }

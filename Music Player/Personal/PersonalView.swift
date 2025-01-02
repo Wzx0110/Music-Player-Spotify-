@@ -15,7 +15,7 @@ struct PersonalView: View {
         GeometryReader { geometry in
             VStack {
                 VStack(alignment: .leading, spacing: 30) {
-                    Button(action: { // 檢視個人檔案
+                    Button(action: { // 檢視個人檔案(未完成)
                         
                     }) {
                         HStack(spacing: 10) {
@@ -40,7 +40,7 @@ struct PersonalView: View {
                     Divider()
                         .background(.gray)
                         .offset(x: -10)
-                    Button(action: { // 新增帳戶
+                    Button(action: { // 新增帳戶(未完成)
                         
                     }) {
                         HStack(spacing: 10) {
@@ -51,18 +51,18 @@ struct PersonalView: View {
                                 .foregroundStyle(.white)
                         }
                     }
-                    Button(action: { // 新內容
+                    Button(action: { // 新內容(未完成)
                         
                     }) {
                         HStack(spacing: 10) {
-                            Image(systemName: "flask")
+                            Image(systemName: "bolt")
                                 .foregroundColor(.white)
                             Text("新內容")
                                 .font(.system(size: 20))
                                 .foregroundStyle(.white)
                         }
                     }
-                    Button(action: { // 最近播放
+                    Button(action: { // 最近播放(未完成)
                         
                     }) {
                         HStack(spacing: 10) {
@@ -73,7 +73,7 @@ struct PersonalView: View {
                                 .foregroundStyle(.white)
                         }
                     }
-                    Button(action: { // 設定與隱私權
+                    Button(action: { // 設定與隱私權(未完成)
                         
                     }) {
                         HStack(spacing: 10) {

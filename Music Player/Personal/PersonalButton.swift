@@ -24,7 +24,7 @@ struct PersonalButton: View {
                     .foregroundStyle(Color.black)
             }
         }
-        .offset(x:-170, y: -330)
+        .offset(x: -170, y: -330)
     }
 }
 
